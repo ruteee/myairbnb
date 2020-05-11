@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="getAcc()">
+    <div></div>
     <title> AirBnB</title>
     <div class="container-fluid">
         <div class="row menu-high">
@@ -26,11 +27,11 @@
                 </button>
             </div>
             <div class="col-md-8 text-center align-baseline">
-                <div class="btn-group ">
-                    <button type="button" class="high-menu-button1 btn btn-light btn-lg shadow-sm p-2 mb-3 bg-white rounded"> <strong>Natal, Cidade do Sol</strong></button>
-                    <button type="button" class="btn btn-light btn-lg shadow-sm p-2 mb-3 bg-white rounded"> <strong> 24 de dex. - 25 de dez.</strong></button>
-                    <button type="button" class="btn btn-light btn-lg shadow-sm p-2 mb-3 bg-white rounded"> <strong> 2 hóspedes </strong> </button>
-                    <button type="button" class="btn btn-light btn-lg shadow-sm p-2 mb-3 bg-white rounded"> 
+                <div class="buttons-high btn-group ">
+                    <button type="button" class="high-menu-button1 btn btn-light btn-lg shadow-sm p-2 mb-3 bg-white rounded"> Natal, Cidade do Sol</button>
+                    <button type="button" class="btn btn-light btn-lg shadow-sm p-2 mb-3 bg-white ">  24 de dez. - 25 de dez.</button>
+                    <button type="button" class="btn btn-light btn-lg shadow-sm p-2 mb-3 bg-white "> 2 hóspedes  </button>
+                    <button type="button" class="btn btn-light btn-lg shadow-sm p-2 mb-3 bg-white"> 
                         <i> 
                                 <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="#ff1458" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
@@ -75,6 +76,25 @@
                         
             </div>
         </div>
+
+        <div class="row acco">
+            <div class="col-md-6 align-baseline text center cards">
+                <h2> Acomodações em Natal</h2>
+
+                <div class=" align-baseline ">
+                    <button type="button" class="btn btn-light btn-lg shadow-sm bg-white ">  Flexbilidade de cancelamento</button>
+                    <button type="button" class="btn btn-light btn-lg shadow-sm  bg-white ">  Tipos de lugar</button>
+                    <button type="button" class="btn btn-light btn-lg shadow-sm bg-white ">  Preço</button>
+                    <button type="button" class="btn btn-light btn-lg shadow-sm  bg-white ">  Mais filtros</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 map">
+                <img src="imagens/mapMock.jpg">
+            </div>
+
+
+        </div>
     </div>
 </body>
 
@@ -82,4 +102,5 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="getRooms.js"></script>
 </html>
