@@ -18,7 +18,7 @@ function getAcc(){
              console.log(div_cards)
                
             let card_str = `
-                <div class="row cards_airbnb">
+                <div class="row cards_airbnb" style="font-size:20px">
                     <div class="col-6">
                             <div class="card" style="width: 300px; height: 200px">
                                     <img src=${photo} style="width: 300px; height: 200px" alt="...">
